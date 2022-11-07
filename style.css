@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif'";
+  background: hsl(231, 87%, 47%, 0.1);
+}
+
+.bg-color {
+  background-color: #102fdf;
+}
+
+.container {
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+}
+
+.main-card {
+  inset: 0;
+  position:fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form.search button{
+  width: 10%;
+  padding: 10px;
+  background: #102fdf;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+form.search button:hover{
+  background-color: hsl(231, 87%, 47%, 0.8);
+  scale: 1.05;
+}
+
+
+.search-card {
+  background-color: white;
+  width: 35rem;
+  min-width: 35rem;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 12px 20px -20px;
+}
+.search-card:hover {
+  box-shadow: 0 10px 25px -16px;
+}
+
+.search-card input[type="text"] {
+  width: 80%;
+  box-sizing: border-box;
+  border: 2px solid #102fdf;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+    width: 85%;
+}
+input[type="text"]:hover + button {
+    width: 10%;
+}
+
+.search-card img {
+  width: 65px;
+  height: 65px;
+  margin-right: 1rem;
+  align-self: center;
+  border-radius: 50%;
+  outline: 2px solid #102fdf;
+}
+
+.textarea{
+    max-width: 100%;
+    max-height: 5rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 2px solid #102fdf;
+    overflow-y: scroll;
+}
+
+#lod{
+  display: none;
+  margin: 1rem 0;
+}
+
+.user-details {
+  display: flex;
+  padding: 0.75rem;
+}
+
+.user-details button {
+  float: right;
+  text-align: end;
+  margin: 1.5rem;
+  margin-top: 0;
+  padding: 1rem;
+  background-color: #102fdf;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.user-details button:hover {
+  background-color: hsl(231, 87%, 47%, 0.8);
+  scale: 1.05;
+}
+
+.user-details button a{
+  text-decoration: none;
+  color: white;
+}
+
+.row {
+  width: auto;
+  padding: 15px;
+}
+
+.column {
+    width: 50%;
+    float: left;
+}

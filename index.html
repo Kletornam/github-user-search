@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Search | by Etornam</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  </head>
+  <body>
+    <header>
+      <div class="bg-color container">
+        <h1>GitHub User Search Page</h1>
+      </div>
+    </header>
+    <main>
+      <div class="main-card">
+        <div class="search-card">
+          <form class="search">
+            <input
+              type="text"
+              name="search" id="search-bar"
+              placeholder="Enter username to search..." 
+            />
+            <button id="form-search" type="button" onclick="fetchProfileDetails()"><i class="fa fa-search"></i></button>
+          </form>
+          <div id="lod">
+              <br />
+              <hr />
+          <div class="user-details row">
+            <img src="/" id="user-image" alt="user-image" srcset="" />
+            <div class="column">
+              <h2 id="username">John Doe</h2>
+              <p id="handle">@johndoe</p>
+              <p id="location">London</p>
+            </div>
+            <div class="column">
+              <button type="button"> <a id="user-url" href="#">View Profile</a></button>
+            </div>
+          </div>
+          <div>
+            <p id="about">
+              About Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quis officiis unde necessitatibus ipsa magni tempora rem. Vitae,
+              dicta dignissimos!
+            </p>
+          </div>
+          <div>
+            <div class="row">
+              <div class="column">
+                <h3>Following: <span id="following">10</span></h3>
+              </div>
+              <div class="column">
+                <h3>Followers: <span id="followers">4</span></h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h3>List of Repositories:</h3>
+              </div>
+              <div class="column">
+                <h3>Total Repositories: <span id="repos">20</span> </h3>
+              </div>
+        </div>
+        <div class="textarea" id="projects">
+          <li>Project one</li>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
